@@ -4,118 +4,91 @@
 
 <head>
       <!-- All Elements = <opening tag> contents between the tag </closing tag> -->
-      <title>My First Webiste</title>
+      <title>Joseph's Website</title>
 
 </head>
 
+   <style>
+    body{background-color: rgb(55, 101, 92); 
 
-<!-- the <body> tag is for anything witin the body of webpage -->
+ 
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;}
 
-<body style="background-color: whitesmoke;">
+    h1{color: rgb(22, 22, 22); text-align: center;}
 
-      <!-- the <h> tags range from 1 - 6 and one is the largest and 6 is the smallest -->
-      <h1 style="color: rgb(360,360,360);">Joseph Mosi</h1>
+  form{ margin: auto;
+  width: 50%;
+  border: 3px solid green;
+  padding: 10px;
+      }
+    
+    input{background-color: black; 
+          color: white;
+border: 2px ;
+border-radius: 2px;}
 
-      <img src="/images/IMG_3688.JPG" height="200"
-            title="a portrait of a dark skinned man with a beanie and a beard standing in front of a couple of woodland area"
-            alt="a portrait of a dark skinned man with a beanie and a beard standing in front of a couple of woodland area">
-      <br> <!-- the <br> tag doest need closing is is to add line breaks -->
+input[type=text]
+{transition: width 3s ease-in-out;}
 
+input[type=text]:focus {
+  width: 30%;}
 
-      <!-- the <p> tag is for paragraphs -->
-      <p style="background-color: chocolate; color: white;"><i>, ipsum <b> sit amet consectetur adipisicing elit.</b>
-                  Dicta ratione placeat ipsa illum quo excepturi. Ad ab
-                  et, pariatur tempore totam optio debitis ex cum aliquid aspernatur. Quam, animi numquam!</i></p>
-
-
-      <h2>About</h2>
-      <hr> <!-- the <hr> tag physically divides sections of the website -->
-
-
-      <button>click me</button>
-      
-      <audio controls autoplay muted loop
-            src="/music/afrobeat-x-afro-type-beat-x-dancehall-beat-instrumental-lover-194140.mp3"></audio>
-      <br>
-      <video autoplay loop src="video/2370-157663201.mp4" height="200"></video>
+      </style>
 
 
-
-      <iframe>
-            <iframe src="hhtps//" frameborder="0"></iframe> <source>
-      </iframe>
-      <div style="background-color: white;">
-            <h3>Coding</h3>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta ratione placeat ipsa illum quo excepturi.
-                  Ad ab
-                  et, pariatur tempore totam optio debitis ex cum aliquid aspernatur. Quam, animi numquam!</p>
-
-            <h3>Photgraphy</h4>
-                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. <span style="color: red;"> Dicta ratione
-                              placeat ipsa illum quo excepturi</span>.
-                        Ad ab
-                        et, pariatur tempore totam optio debitis ex cum aliquid aspernatur. Quam, animi numquam!</p>
-
-                  <a href="page2.html" target=_blank" title="to go to page 2">
-
-                        <!-- <a> tag allows us to create hyperlinks -->
-                        <!-- href   -inputs the link// you can also link html pages -->
-                        <!-- title  -infromation that can been when a mouse hovers the element -->
-
-                        PAGE 2 <!-- this is actual button title -->
-                  </a>
-                  <br>
-                  <a href="mailto:iamrealjo@gmail.com" target=_self" title="my email">
-
-                        CONTACT ME
-
-                  </a>
-      </div>
-      <ul>
-            <li> pizza </li>
-            <li> fruits </li>
-            <li> pizza </li>
-            <li> fruits </li>
-      </ul>
-
-      <ol>
-            <li> pizza </li>
-            <li> fruits </li>
-            <li> pizza </li>
-            <li> fruits </li>
-      </ol>
+<body>
 
 
-      <dl>
-            <dt> html</dt>
-            <dd>this is the backbone of any website</dd>
-            </ol>
+      <h1>
+            IDENTIFY YOURSELF, WORM
+      </h1>
+
+
+            <form action="action_page.php" method="post">
+
+                  <label for="fname" style="color: white"> First name :</label>
+                  <input type="text" id="fname" name=fname placeholder="John" required>
+                        </div>
+                  <p>
+                  <div>
+                        <label for="lname" style="color: white"> Last name :</label>
+                        <input type="text" id="lname" name=lname placeholder="Wick" required</div>
+
+                        <p>
+                        <div>
+                              <label for="pass"> Password :</label>
+                              <input type="password" id="password" name=password maxlength="12" required</div>
+
+                              <p>
+
+                                    <label for="UAL">UAL</label>
+                                    <input type="radio" id="UAL" name="title" value="UAL">
+
+                                    <label for="Friend">Friend</label>
+                                    <input type="radio" id="Friend" name="title" value="Friend">
+
+                                    <label for="Stranger">Stranger</label>
+                                    <input type="radio" id="Stranger" name="title" value="Stranger">
+
+                              <p>
+                                    <label for="Stranger">Stranger</label>
+                                    <select id="Person" "radio" name="Person" value="Stranger" required>
+                                          <option value="UAL"> Admin</option>
+                                          <option value="Examiner"> Examiner</option>
+                                          <option value="vistor"> Vistor</option>
+                                          <br>
+                                          <div>
+                                                <input type="reset" </div>
+
+
+                                                <p>
+                                                <div>
+                                                      <input type="submit" </div>
 
 
 
-            <!-- table tag -->
 
-            <table bgcolor="black" width="700">
-                  <tr bgcolor="grey">
-                        <th>Sunday</th>
-                        <th>Monday</th>
-                        <th>Tuesday</th>
-                        <th>Wednday</th>
-                  </tr>
-                  <tr bgcolor="yellow" align="center">
-                        <td>Sunday</td>
-                        <td>Monday</td>
-                        <td>Tuesday</td>
-                        <td>Wednday</td>
-                  </tr>
-            </table>
-
-
-            <title>My first website</title>
-            <meta charset="UTF-8" >
-            <meta name="description" content="Free HTN <meta name="keywords" content="HTML, tutor <meta name="author"
-            content="Bro Code" > <meta name="viewport" content="width=devic <meta http-equiv="refresh" content="30">
-</body>
+            </form>
 
 
 </html>
