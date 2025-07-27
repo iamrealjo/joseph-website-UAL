@@ -8,32 +8,53 @@
 
 </head>
 
-   <style>
-    body{background-color: rgb(55, 101, 92); 
+<style>
 
- 
-      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;}
+      html{height: 100%;}
 
-    h1{color: rgb(22, 22, 22); text-align: center;}
-
-  form{ margin: auto;
-  width: 50%;
-  border: 3px solid green;
-  padding: 10px;
+      body {background-color: rgb(135, 135, 135);
+            height: 100%;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
       }
-    
-    input{background-color: black; 
-          color: white;
-border: 2px ;
-border-radius: 2px;}
 
-input[type=text]
-{transition: width 3s ease-in-out;}
+      .container{height: 100%;}
 
-input[type=text]:focus {
-  width: 30%;}
+      h1 {
+            color: rgb(22, 22, 22);
+            text-align: center;
+      }
 
-      </style>
+      form {
+            margin: auto;
+            width: 50%;
+            margin-top: 50%;
+            margin-bottom: 50%;
+            border: 3px solid green;
+            padding: 10px;
+            text-align: left;
+      }
+
+      input {
+            background-color: black;
+            color: white;
+            border: 2px;
+            border-radius: 2px;
+      }
+
+      input[type=text]:focus {
+            background-color: rgb(0, 130, 110);
+      }
+
+      input[type=text] {
+            transition: width 0.4s ease-in;
+      }
+
+      input[type=text]:focus {
+            width: 50%;
+      }
+</style>
 
 
 <body>
@@ -43,52 +64,52 @@ input[type=text]:focus {
             IDENTIFY YOURSELF, WORM
       </h1>
 
+      <div>
 
             <form action="action_page.php" method="post">
 
-                  <label for="fname" style="color: white"> First name :</label>
-                  <input type="text" id="fname" name=fname placeholder="John" required>
-                        </div>
-                  <p>
+                  <div>
+
+                        <label for="fname" style="color: white"> First name :</label>
+                        <input type="text" id="fname" name=fname placeholder="John" required>
+
+                  </div>
+
+                  <br>
+
                   <div>
                         <label for="lname" style="color: white"> Last name :</label>
-                        <input type="text" id="lname" name=lname placeholder="Wick" required</div>
+                        <input type="text" id="lname" name=lname placeholder="Wick" required>
 
-                        <p>
-                        <div>
-                              <label for="pass"> Password :</label>
-                              <input type="password" id="password" name=password maxlength="12" required</div>
+                  </div>
 
-                              <p>
+                  <br>
 
-                                    <label for="UAL">UAL</label>
-                                    <input type="radio" id="UAL" name="title" value="UAL">
+                  <div>
+                        <label for="Version">Version</label>
+                        <select id="Version" "radio" name="Version" value="version" required>
+                              <option value="Clean">Clean</option>
+                              <option value="shows code"> Shows Code</option>
 
-                                    <label for="Friend">Friend</label>
-                                    <input type="radio" id="Friend" name="title" value="Friend">
+                  </div>
 
-                                    <label for="Stranger">Stranger</label>
-                                    <input type="radio" id="Stranger" name="title" value="Stranger">
+                  <br>
 
-                              <p>
-                                    <label for="Stranger">Stranger</label>
-                                    <select id="Person" "radio" name="Person" value="Stranger" required>
-                                          <option value="UAL"> Admin</option>
-                                          <option value="Examiner"> Examiner</option>
-                                          <option value="vistor"> Vistor</option>
-                                          <br>
-                                          <div>
-                                                <input type="reset" </div>
+                  <div>
+                        <input type="reset">
+                  </div>
 
+                  <br>
 
-                                                <p>
-                                                <div>
-                                                      <input type="submit" </div>
+                  <div>
+                        <input type="submit">
+                  </div>
 
 
 
 
             </form>
 
+      </div>
 
 </html>
