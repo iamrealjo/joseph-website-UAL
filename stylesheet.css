@@ -1,24 +1,87 @@
+body {
+      background-color: rgb(19, 19, 19);
+      height: 100%;
+      font-family: 'Space Mono', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      margin: 0px;
+
+}
+
+.header {
+      background-image: url(images/IMG_3688.JPG);
+      background-size: cover;
+      background-attachment: scroll;
+      background-repeat: no-repeat;
+      background-position: center;
+}
 
 
-      body {background-color: rgb(1, 125, 42);
-            height: 100%;
-            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-            margin: 0;
-            padding: 0;
-      }
+button { width: 30vh; height:5vw ; 
+      
+      background-color: rgba(3, 119, 75, 0.491);
+      border: 0px;
+      font-family: Bitcount Prop Single;
+      border-radius: 12px;
+     font-size: 12px; font-size: 3vh;
+color: rgb(255, 255, 255);}
 
-      .container{height: 100%;}
+.section1 {
+      padding: 5%;
+      overflow: hidden;
+}
 
-      h1 {
-            color: rgb(22, 22, 22);
-            text-align: center;
-      }
+.section2 {
+      background-color: rgb(54, 89, 69);
+      padding: 5%;
+      overflow: hidden;
+}
 
- h2 {
-            color: rgb(22, 22, 22);
-            text-align: center;
-      }
- p {
-            color: rgb(255, 255, 255);
-            text-align: center;
-      }
+.section3 {
+      background-color: rgba(146, 34, 45, 0.872);
+      padding: 5%;
+      overflow: hidden;
+}
+
+
+.hoverbox {
+      background-color: aqua;
+      max-width: 45vh;
+      height: fit-content;
+}
+
+.hoverbox img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      vertical-align: middle;
+}
+
+h1 {
+      margin: 0px;
+      color: rgb(255, 255, 255);
+      text-align: center;
+      font-size: 80px;
+      font-size: 10vh;
+      font-family: Bitcount Prop Single;
+}
+
+
+
+h2 {
+      margin: 0px;
+      color: rgb(255, 255, 255);
+      text-align: center;
+      font-size: 38px;
+      font-family: Bitcount Prop Single;
+}
+
+
+
+.p1 {
+      color: rgb(255, 255, 255);
+      text-align: right;
+      font-family: Space Mono;
+      font-size: 12px;
+      font-size: 2vh;
+      font-weight: lighter;
+
+}
