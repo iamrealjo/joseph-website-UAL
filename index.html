@@ -1,115 +1,92 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="en">
 
 <head>
-      <!-- All Elements = <opening tag> contents between the tag </closing tag> -->
-      <title>Joseph's Website</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=devic <meta http-equiv=" refresh" content="30">
 
+  <title>Login Page</title>
+
+  <link rel="stylesheet" href="stylesheet.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bitcount+Prop+Single:wght@100..900&display=swap"
+    rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bitcount+Prop+Single:wght@100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    rel="stylesheet">
+
+
+
+  <style>
+    #message {
+      color: green;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+  </style>
 </head>
 
-<style>
+<body style="background-color: rgb(20, 83, 41); size: 100vw;" >
 
-      html{height: 100%;}
 
-      body {background-color: rgb(135, 135, 135);
-            height: 100%;
-            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-            margin: 0;
-            padding: 0;
+
+
+
+  <div style="size:100vw; align-content: center; margin-top:50%;margin-bottom: 50%;">
+
+    <div>
+
+      <h2 style="font-size: 54px;">Login</h2>
+
+    </div>
+<br>
+    <form id="loginForm" style=" display: grid;
+place-items: center;">
+      <label for="username">Username:</label>
+      <input type="text" id="username" style="width: 20vw;
+      height: 30px; transition: 0.5s;"><br>
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" style="width: 20vw;
+      height: 30px;transition: 0.5s;" required><br><br>
+
+      <button type="submit". style="width: 20vw;
+      height: 60px; font-size: 28px;">SUBMIT</button>
+    </form>
+
+  </div>
+
+
+  <div id="message"></div>
+
+  <script>
+    const correctUsername = "admin";
+    const correctPassword = "password123";
+
+    document.getElementById("loginForm").addEventListener("submit", function (event) {
+      event.preventDefault();
+
+      const enteredUsername = document.getElementById("username").value;
+      const enteredPassword = document.getElementById("password").value;
+      const messageDiv = document.getElementById("message");
+
+      if (enteredUsername === correctUsername && enteredPassword === correctPassword) {
+        messageDiv.textContent = "Login successful! Redirecting...";
+
+        // Wait 2 seconds before redirecting
+        setTimeout(() => {
+          window.location.href = "homepage.html";
+        }, 2000);
+      } else {
+        messageDiv.textContent = "Incorrect username or password.";
+        messageDiv.style.color = "red";
       }
-
-      .container{height: 100%;}
-
-      h1 {
-            color: rgb(22, 22, 22);
-            text-align: center;
-      }
-
-      form {
-            margin: auto;
-            width: 50%;
-            margin-top: 50%;
-            margin-bottom: 50%;
-            border: 3px solid green;
-            padding: 10px;
-            text-align: left;
-      }
-
-      input {
-            background-color: black;
-            color: white;
-            border: 2px;
-            border-radius: 2px;
-      }
-
-      input[type=text]:focus {
-            background-color: rgb(0, 130, 110);
-      }
-
-      input[type=text] {
-            transition: width 0.4s ease-in;
-      }
-
-      input[type=text]:focus {
-            width: 50%;
-      }
-</style>
-
-
-<body>
-
-
-      <h1>
-            IDENTIFY YOURSELF, WORM
-      </h1>
-
-      <div>
-
-            <form action="action_page.php" method="post">
-
-                  <div>
-
-                        <label for="fname" style="color: white"> First name :</label>
-                        <input type="text" id="fname" name=fname placeholder="John" required>
-
-                  </div>
-
-                  <br>
-
-                  <div>
-                        <label for="lname" style="color: white"> Last name :</label>
-                        <input type="text" id="lname" name=lname placeholder="Wick" required>
-
-                  </div>
-
-                  <br>
-
-                  <div>
-                        <label for="Version">Version</label>
-                        <select id="Version" "radio" name="Version" value="version" required>
-                              <option value="Clean">Clean</option>
-                              <option value="shows code"> Shows Code</option>
-
-                  </div>
-
-                  <br>
-
-                  <div>
-                        <input type="reset">
-                  </div>
-
-                  <br>
-
-                  <div>
-                        <input type="submit">
-                  </div>
-
-
-
-
-            </form>
-
-      </div>
+    });
+  </script>
+</body>
 
 </html>
